@@ -24,7 +24,7 @@
             <li class="navbar-item">
                 <a href="#presentation" class="navbar-link">
                     <i class="fa-solid fa-house navbar-icon"></i>
-                    <span class="navbar-title">Home</span>
+                    <span class="navbar-title">Accueil</span>
                 </a>
             </li>
             <li class="navbar-item">
@@ -129,26 +129,26 @@
         <div id="contact" class="formulaire">
             <h2>Contactez moi</h2>
             <div class="container">
-                <form action="action_page.php">
+                <form method="post"  action="contact.php">
             
-                <label for="fname">Prénom</label>
-                <input type="text" id="fname" name="firstname" placeholder="Prénom">
-            
-                <label for="lname">Nom</label>
-                <input type="text" id="lname" name="lastname" placeholder="Nom">
-            
-                <label for="country">Pays</label>
-                <select id="country" name="country">
-                    <option value="france">France</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="canada">Canada</option>
-                </select>
-            
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
-            
-                <input type="submit" value="Envoyer">
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="prenom" placeholder="Prénom">
+                
+                    <label for="lname">Nom</label>
+                    <input type="text" id="lname" name="nom" placeholder="Nom">
+                
+                    <label for="country">Pays</label>
+                    <select id="country" name="pays">
+                        <option value="france">France</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="com" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Envoyer">
             
                 </form>
             </div>
