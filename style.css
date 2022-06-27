@@ -4,6 +4,7 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: rgba(24, 24, 24, 1);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main {
@@ -134,11 +135,27 @@ h3 {
 }
 
 .fond-rouge {
-    width: 100%;
+    width: 130%;
     position: absolute;
     height: 80vh;
     z-index: -1;
-    top: 70vh;
+    transform: rotate(2deg);
+    top: 78vh;
+    right: 0;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
+
+}
+
+
+.fond-rouge-2 {
+    width: 130%;
+    position: absolute;
+    height: 90vh;
+    z-index: -1;
+    transform: rotate(2deg);
+    top: 273vh;
     right: 0;
     left: 0;
     background-color: rgb(240, 240, 240);
@@ -148,7 +165,7 @@ h3 {
 .presentation {
     display: flex;
     flex-direction: column;
-    padding: 1rem 10%;
+    padding: 4rem 10%;
 }
 
 .photo {
@@ -187,7 +204,7 @@ h3 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 8vh;
     color: #141414;
 }
 
@@ -221,10 +238,13 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 19vh;
 }
 
 .portfolio h2 {
-    margin-top: 25vh;
+    text-align: center;
+    margin-bottom: 4vh; 
+    padding-top: 6vh;
 }
 
 
@@ -272,7 +292,7 @@ h3 {
 .foxsearch:hover .texte-centrer {
     opacity: 1;
     transition: 0.3s;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
 }
 
 .black {
@@ -297,6 +317,12 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#country {
+    font-family: 'Montserrat', sans-serif;
+
 }
   
 
@@ -307,14 +333,13 @@ input[type=submit]:hover {
  
 .container {
     padding: 20px;
-    width: 100vh;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .formulaire {
-    background-color: rgb(240, 240, 240);
-    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
+
     color: #141414;
 }
 
@@ -334,6 +359,12 @@ input[type=submit]:hover {
 */
 
 @media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
     .navbar {
         top: auto;
         bottom: 0;
@@ -349,10 +380,6 @@ input[type=submit]:hover {
         flex-direction: row;
     }
 
-    main {
-        margin-left:0 ;
-        margin-bottom: 5rem;
-    }
 
     .navbar:hover .navbar-title {
         display: none;
@@ -371,19 +398,11 @@ input[type=submit]:hover {
         justify-content: center;
     }
 
-    .presentation  {
-        flex-direction: column;
-        margin-left: 0;
-        width: 100%;
-        align-items: center;    
-    }
-
     .bio {
-        width: 35vh;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: column;
     }
     .fond-rouge {
-        top: 80vh;
+        width: 100%;
     }
+
 }

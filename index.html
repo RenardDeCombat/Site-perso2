@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li class="navbar-item">
-                <a href="#" class="navbar-link">
+                <a href="#contact" class="navbar-link">
                     <i class="fa-solid fa-phone navbar-icon"></i>    
                     <span class="navbar-title">Contact</span>
                 </a>
@@ -54,6 +54,7 @@
         </ul>
     </nav>
     <div class="fond-rouge"></div>
+    <div class="fond-rouge-2"></div>
     <main>
         <div id="presentation" class="presentation">
             <div class="photo">
@@ -61,7 +62,8 @@
             </div> 
             <div class="bio">
                 <img src="image/photo_CV.JPG" alt="photo de moi en ville">
-                <p>Je suis Thibaut Bourlier, actuellement étudiant à la NormandieWebSchool 
+                <p>
+                    Je suis Thibaut Bourlier, actuellement étudiant à la NormandieWebSchool 
                     en fin de première année. Je vous présente ici mon projet de fin d'année.
                     Je suis à la recherche d'alternance dans le developpement web, donc vous 
                     cherchez quelqu'un de souriant et motivé à apprendre, je suis là pour ça.
@@ -124,28 +126,29 @@
                 </div>
             </div>
         </div>
-        <div class="formulaire">
+        <div id="contact" class="formulaire">
             <h2>Contactez moi</h2>
             <div class="container">
                 <form action="action_page.php">
             
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Prénom">
             
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Nom">
             
-                <label for="country">Country</label>
+                <label for="country">Pays</label>
                 <select id="country" name="country">
-                    <option value="australia">Australia</option>
+                    <option value="france">France</option>
+                    <option value="suisse">Suisse</option>
+                    <option value="belgique">Belgique</option>
                     <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
                 </select>
             
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
             
-                <input type="submit" value="Submit">
+                <input type="submit" value="Envoyer">
             
                 </form>
             </div>
