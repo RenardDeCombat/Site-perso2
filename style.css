@@ -245,6 +245,8 @@ h3 {
     transform: translate(-50%, 0);
     transition: 0.3s;
     z-index: 1;
+    font-weight: 600;
+    text-align: center;
 }
 
 .foxsearch img {
@@ -264,6 +266,10 @@ h3 {
     opacity: 1;
     transition: 0.3s;
     transform: translate(-50%, -50%);
+}
+
+.black {
+    color: rgb(20, 20, 20);
 }
 
 /*
