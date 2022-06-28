@@ -17,7 +17,7 @@
                 isset($_POST["email"])&&
                 isset($_POST["pays"])&&
                 isset($_POST["com"])){
-                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:pays,:com)");
+                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:email,:pays,:com)");
                         $insertion->bindValue(":prenom",$_POST["prenom"]);
                         $insertion->bindValue(":nom",$_POST["nom"]);
                         $insertion->bindValue(":email",$_POST["email"]);
@@ -34,7 +34,4 @@
                 }else{
                     echo "Une variable n'est pas declaree et ou est null ";
                 }
-
-
-
 ?>

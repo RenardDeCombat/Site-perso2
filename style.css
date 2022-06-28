@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -140,7 +144,7 @@ h3 {
 .presentation {
     display: flex;
     flex-direction: column;
-    padding: 4rem 10%;
+    padding: 1rem 10% 5rem 10%;
 }
 
 .photo {
@@ -158,16 +162,48 @@ h3 {
 
 .bio {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10vh;
-    padding: 0 7vh;
+    padding: 0 10vh;
     flex-wrap: wrap;
 }
 
-.bio p {
+.contenu {
+    display: flex;
+    margin-top: 8vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 15vh;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description p {
+    margin: 0 0 2rem 0;
     max-width: 50vh;
-    min-width: 35vh;
+    min-width: 40vh;
+}
+
+.bouton1 {
+    width: 300px;
+    margin-top: 1rem;
+    padding: 2vh 6vh;
+    background-color: rgba(122, 1, 1, 1);
+    border-radius: 10px;
+    border: transparent;
+    font-size: 19px;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bouton1:hover {
+    background-color: rgba(189, 22, 34, 1);
+    cursor: pointer;
+
 }
 
 .hobbies {
@@ -191,6 +227,7 @@ h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: 5rem;
+    padding: 0 10rem;
 }
 
 .sport-jeu h3 {
@@ -247,14 +284,15 @@ h3 {
     z-index: 1;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
 .foxsearch img {
     max-width: 600px;
     height: auto;
     border-radius: 10px;
-    border: solid 1px white;
-    transition: transform 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .foxsearch:hover img {
@@ -381,14 +419,15 @@ input[type=submit]:hover {
         justify-content: center;
     }
 
-    .bio p {
-        padding-top: 2rem;
+    .description p {
         text-align: center;
+        margin-top: 2rem;
     }
 
     .sport-jeu {
         margin-left: 7%;
         margin-right: 7%;
+        padding: 0;
         text-align: center;
     }
     .sport-jeu h3 {
@@ -438,7 +477,11 @@ input[type=submit]:hover {
 
     .bio {
         margin-top: 5rem;
+        padding: 0;
     }
 
+    .contenu {
+        margin-top: 0;
+    }
 
 }
