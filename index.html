@@ -127,13 +127,16 @@
         <div id="contact" class="formulaire">
             <h2>Contactez moi</h2>
             <div class="container">
-                <form action="action_page.php">
+                <form method="post" action="contact.php">
             
                 <label for="fname">Prénom</label>
                 <input type="text" id="fname" name="firstname" placeholder="Prénom">
             
                 <label for="lname">Nom</label>
                 <input type="text" id="lname" name="lastname" placeholder="Nom">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Adresse mail">
             
                 <label for="country">Sujet</label>
                 <select id="country" name="country">
