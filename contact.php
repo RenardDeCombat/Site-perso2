@@ -14,7 +14,7 @@
             }
             if (isset($_POST["prenom"])&&
                 isset($_POST["nom"])&&
-                isset($_POST)["email"]&&
+                isset($_POST["email"])&&
                 isset($_POST["pays"])&&
                 isset($_POST["com"])){
                             $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:pays,:com)");
