@@ -134,28 +134,42 @@
             <div class="container">
                 <form method="post" action="contact.php">
             
-                <label for="fname">Prénom</label>
+                <label for="prenom">Prénom</label>
                 <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                <div class = "rouge cache" id="fname">
+                    <strong> Veuillez rentrer votre prenom </strong>
+                </div>
             
-                <label for="lname">Nom</label>
+                <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" placeholder="Nom">
+                <div class = "rouge cache" id="lname">
+                    <strong> Veuillez rentrer votre nom </strong>
+                </div>
 
-                <label for="mail">Email</label>
+                <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Adresse mail">
+                <div class = "rouge cache" id="mail">
+                    <strong> Veuillez rentrer votre adresse email </strong>
+                </div>
             
-                <label for="country">Sujet</label>
-                <select id="country" name="country">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" name="sujet">
                     <option value="rien">...</option>
                     <option value="questions">Questions</option>
                     <option value="alternance">Alternance</option>
                     <option value="autre">Autre</option>
                 </select>
+                <div class = "rouge cache" id="subject">
+                    <strong> Veuillez selectionner un sujet </strong>
+                </div>
             
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
+                <label for="com">Message</label>
+                <textarea id="com" name="com" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
+                <div class = "rouge cache" id="mess">
+                    <strong> Veuillez rentrer un message </strong>
+                </div>
             
                 <input type="submit" value="envoyer">
-            
                 </form>
             </div>
         </div>

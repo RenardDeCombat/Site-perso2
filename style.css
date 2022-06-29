@@ -369,6 +369,14 @@ input[type=submit]:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+.cache {
+    display: none;
+}
+
+.rouge {
+    color: red;
+}
+
 
 /*
 *** RESPONSIVE

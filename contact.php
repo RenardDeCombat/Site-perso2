@@ -15,13 +15,13 @@
             if (isset($_POST["prenom"])&&
                 isset($_POST["nom"])&&
                 isset($_POST["email"])&&
-                isset($_POST["pays"])&&
+                isset($_POST["sujet"])&&
                 isset($_POST["com"])){
-                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:email,:pays,:com)");
+                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:email,:sujet,:com)");
                         $insertion->bindValue(":prenom",$_POST["prenom"]);
                         $insertion->bindValue(":nom",$_POST["nom"]);
                         $insertion->bindValue(":email",$_POST["email"]);
-                        $insertion->bindValue(":pays",$_POST["pays"]);
+                        $insertion->bindValue(":sujet",$_POST["sujet"]);
                         $insertion->bindValue(":com",$_POST["com"]);
                     $verification= $insertion->execute();
                         if ($verification) {
@@ -29,6 +29,7 @@
                         }else{
                             echo "Echec d'insertion";
                         }
+                        header('Location:index.html')
                 
                 
                 }else{
