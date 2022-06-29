@@ -227,7 +227,7 @@ h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: 5rem;
-    padding: 0 10rem;
+    padding: 0 15rem;
 }
 
 .sport-jeu h3 {
@@ -237,11 +237,11 @@ h3 {
 
 
 .sports {
-    width: 60vh;
+    width: 50vh;
 }
 
 .jeux {
-    width: 60vh;
+    width: 50vh;
 }
 
 .portfolio {
