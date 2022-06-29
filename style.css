@@ -1,14 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
     background-color: rgba(24, 24, 24, 1);
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 main {
-    margin-left: 5rem;
     color: white;
 }
 
@@ -38,6 +40,10 @@ h3 {
 }
 
 
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 .navbar {
     width: 5rem;
@@ -134,42 +140,14 @@ h3 {
     }
 }
 
-.fond-rouge {
-    width: 130%;
-    position: absolute;
-    height: 80vh;
-    z-index: -1;
-    transform: rotate(2deg);
-    top: 78vh;
-    right: 0;
-    left: 0;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
-
-}
-
-
-.fond-rouge-2 {
-    width: 130%;
-    position: absolute;
-    height: 90vh;
-    z-index: -1;
-    transform: rotate(2deg);
-    top: 273vh;
-    right: 0;
-    left: 0;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
-}
 
 .presentation {
     display: flex;
     flex-direction: column;
-    padding: 4rem 10%;
+    padding: 1rem 10% 5rem 10%;
 }
 
 .photo {
-    min-width: 65vh;
     text-align: center;
     margin-top: 2vh;
 }
@@ -184,39 +162,72 @@ h3 {
 
 .bio {
     display: flex;
+    padding: 0 10vh;
+    flex-wrap: wrap;
+}
+
+.contenu {
+    display: flex;
+    margin-top: 8vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 15vh;
     align-items: center;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.bio p {
-    margin-left: 15%;
-    width: 70vh;
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.description p {
+    margin: 0 0 2rem 0;
+    max-width: 50vh;
+    min-width: 40vh;
+}
 
+.bouton1 {
+    width: 300px;
+    margin-top: 1rem;
+    padding: 2vh 6vh;
+    background-color: rgba(122, 1, 1, 1);
+    border-radius: 10px;
+    border: transparent;
+    font-size: 19px;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.bouton1:hover {
+    background-color: rgba(189, 22, 34, 1);
+    cursor: pointer;
+
+}
 
 .hobbies {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8vh;
+    justify-content: space-around;
+    padding: 7vh 0vh;
     color: #141414;
+    width: 100%;
+    z-index: -1;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
 }
 
 .hobbies h2 {
     text-align: center;
-    margin-bottom: 4vh; 
-    padding-top: 6vh;
 }
 
 .sport-jeu {
     display: flex; 
-    justify-content: center;   
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    padding: 0 15rem;
 }
 
 .sport-jeu h3 {
@@ -226,30 +237,29 @@ h3 {
 
 
 .sports {
-    width: 60vh;
+    width: 50vh;
 }
 
 .jeux {
-    width: 60vh;
-    margin-left: 10%;
+    width: 50vh;
 }
 
 .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 19vh;
 }
 
 .portfolio h2 {
     text-align: center;
-    margin-bottom: 4vh; 
+    margin-bottom: 2vh; 
     padding-top: 6vh;
 }
 
 
 .projets {
-    margin-top: 7vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -257,7 +267,6 @@ h3 {
 }
 
 .foxsearch {
-    width: 600px;
     border-radius: 10px;
     padding: 2vh 5vh;
     display: block;
@@ -266,27 +275,29 @@ h3 {
 
 .texte-centrer {
     opacity: 0;
+    width: 35vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -20%);
     transition: 0.3s;
     z-index: 1;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
 .foxsearch img {
-    width: 600px;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
-    border: solid 1px white;
-    transition: transform 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .foxsearch:hover img {
     transform: scale(1.05);
-    filter: blur(2px);
+    filter: blur(4px);
 }
 
 .foxsearch:hover .texte-centrer {
@@ -307,7 +318,7 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical 
+    resize: none;
 }
   
 input[type=submit] {
@@ -325,28 +336,33 @@ input[type=submit] {
 
 }
   
-
 input[type=submit]:hover {
     background-color: rgb(172, 5, 5);
 }
   
  
 .container {
-    padding: 20px;
-    width: 40%;
+    padding: 5vh 1vh;
+    max-width: 40%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .formulaire {
-
     color: #141414;
+    width: 100%;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 4px 0px 4px 8px rgba(122, 1, 1, 1);
+    margin-bottom: 5rem;
 }
 
 .formulaire h2 {
     text-align: center;
-    margin-top: 12vh;
-    padding-top: 7vh;
+    padding-top: 3vh;
 }
 
 ::placeholder {
@@ -364,12 +380,17 @@ input[type=submit]:hover {
         margin: 0;
         padding: 0;
     }
+
+    p {
+        font-size: 16px;
+    }
     
     .navbar {
         top: auto;
         bottom: 0;
         width: 100%;
         position: fixed;
+        z-index: 2;
     }
 
     .navbar:hover {
@@ -398,11 +419,69 @@ input[type=submit]:hover {
         justify-content: center;
     }
 
-    .bio {
-        flex-direction: column;
+    .description p {
+        text-align: center;
+        margin-top: 2rem;
     }
-    .fond-rouge {
-        width: 100%;
+
+    .sport-jeu {
+        margin-left: 7%;
+        margin-right: 7%;
+        padding: 0;
+        text-align: center;
+    }
+    .sport-jeu h3 {
+        margin: 0;
+    }
+
+    .navbar-icon {
+        margin: 0
+    }
+    .foxsearch img {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+    .foxsearch {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .portfolio {
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+    
+    .texte-centrer {
+        transform: translate(-50%, -40%);
+    }
+    .container {
+        max-width: 90%;
+    }
+
+    .portfolio h2 {
+        margin: 0;
+    }
+
+    .hobbies h2 {
+        margin-bottom: 2rem;
+    }
+
+    .hobbies {
+        padding: 4vh 0 ;
+    }
+    
+    .presentation {
+        padding: 2rem 10%;
+    }
+
+    .bio {
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .contenu {
+        margin-top: 0;
     }
 
 }

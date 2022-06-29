@@ -14,11 +14,13 @@
             }
             if (isset($_POST["prenom"])&&
                 isset($_POST["nom"])&&
+                isset($_POST["email"])&&
                 isset($_POST["pays"])&&
                 isset($_POST["com"])){
-                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:pays,:com)");
+                            $insertion=$newBD->prepare("INSERT INTO profil VALUES(NULL,:prenom,:nom,:email,:pays,:com)");
                         $insertion->bindValue(":prenom",$_POST["prenom"]);
                         $insertion->bindValue(":nom",$_POST["nom"]);
+                        $insertion->bindValue(":email",$_POST["email"]);
                         $insertion->bindValue(":pays",$_POST["pays"]);
                         $insertion->bindValue(":com",$_POST["com"]);
                     $verification= $insertion->execute();
@@ -32,7 +34,5 @@
                 }else{
                     echo "Une variable n'est pas declaree et ou est null ";
                 }
-
-
-
+ 
 ?>

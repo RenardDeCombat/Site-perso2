@@ -53,21 +53,24 @@
             </li> 
         </ul>
     </nav>
-    <div class="fond-rouge"></div>
-    <div class="fond-rouge-2"></div>
     <main>
         <div id="presentation" class="presentation">
             <div class="photo">
                 <h1>THIBAUT BOURLIER</h1>
             </div> 
-            <div class="bio">
-                <img src="image/photo_CV.JPG" alt="photo de moi en ville">
-                <p>
-                    Je suis Thibaut Bourlier, actuellement étudiant à la NormandieWebSchool 
-                    en fin de première année. Je vous présente ici mon projet de fin d'année.
-                    Je suis à la recherche d'alternance dans le developpement web, donc vous 
-                    cherchez quelqu'un de souriant et motivé à apprendre, je suis là pour ça.
-                </p>
+            <div class="contenu">
+                <div class="bio">
+                    <img src="image/photo_CV.JPG" alt="photo de moi en ville">
+                </div>
+                <div class="description">
+                    <p>
+                        Je suis Thibaut Bourlier, actuellement étudiant à la NormandieWebSchool 
+                        en fin de première année. Je vous présente ici mon projet de fin d'année.
+                        Je suis à la recherche d'alternance dans le developpement web, donc vous 
+                        cherchez quelqu'un de souriant et motivé à apprendre, je suis là pour ça.
+                    </p>
+                    <button class="bouton1" onclick="window.location.href = '#portfolio'">Embauchez moi</button>
+                </div>
             </div>
         </div>
         <div id="hobbies" class="hobbies">
@@ -129,32 +132,35 @@
         <div id="contact" class="formulaire">
             <h2>Contactez moi</h2>
             <div class="container">
-                <form method="post"  action="contact.php">
+                <form method="post" action="contact.php">
             
-                    <label for="fname">Prénom</label>
-                    <input type="text" id="fname" name="prenom" placeholder="Prénom">
-                
-                    <label for="lname">Nom</label>
-                    <input type="text" id="lname" name="nom" placeholder="Nom">
-                
-                    <label for="country">Pays</label>
-                    <select id="country" name="pays">
-                        <option value="france">France</option>
-                        <option value="suisse">Suisse</option>
-                        <option value="belgique">Belgique</option>
-                        <option value="canada">Canada</option>
-                    </select>
-                
-                    <label for="subject">Message</label>
-                    <textarea id="subject" name="com" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
-                
-                    <input type="submit" value="Envoyer">
+                <label for="fname">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            
+                <label for="lname">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom">
+
+                <label for="mail">Email</label>
+                <input type="text" id="email" name="email" placeholder="Adresse mail">
+            
+                <label for="country">Sujet</label>
+                <select id="country" name="country">
+                    <option value="rien">...</option>
+                    <option value="questions">Questions</option>
+                    <option value="alternance">Alternance</option>
+                    <option value="autre">Autre</option>
+                </select>
+            
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Écrivez votre message ..." style="height:200px"></textarea>
+            
+                <input type="submit" value="envoyer">
             
                 </form>
             </div>
         </div>
 
     </main>
-    
+<script src="script.js"></script>
 </body>
 </html>
