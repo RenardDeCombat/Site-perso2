@@ -20,5 +20,4 @@ document.querySelector("form").addEventListener("submit", (ev) =>
     checkError (email,"mail")
     checkError(sujet,"subject")
     checkError(com,"mess")
-    
 });

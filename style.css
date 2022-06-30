@@ -317,7 +317,7 @@ input[type=text], select, textarea {
     border-radius: 10px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     resize: none;
 }
   
@@ -375,6 +375,9 @@ input[type=submit]:hover {
 
 .rouge {
     color: red;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 
