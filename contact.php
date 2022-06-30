@@ -29,7 +29,6 @@
                         }else{
                             echo "Echec d'insertion";
                         }
-                        header('Location:index.html')
                 
                 
                 }else{
