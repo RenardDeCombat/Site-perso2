@@ -458,6 +458,9 @@ input[type=submit]:hover {
 
 .corps li {
     margin-top: 5%;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
 }
 
 .corps a {
@@ -472,10 +475,10 @@ input[type=submit]:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 20vw;
 }
 
 .pres {
-    width: 20vw;
     color: #141414;
 }
 
@@ -484,6 +487,14 @@ input[type=submit]:hover {
 }
 
 .competences {
+
+}
+
+.trofor {
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+
 
 }
 
