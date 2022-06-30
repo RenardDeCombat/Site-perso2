@@ -453,11 +453,13 @@ input[type=submit]:hover {
 
 .corps ul {
     list-style: none;
+}
+
+.pres ul {
     padding-left: 10%;
 }
 
 .corps li {
-    margin-top: 5%;
     font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
     color: #141414;
@@ -470,6 +472,9 @@ input[type=submit]:hover {
     color: #141414;
 }
 
+.pres li {
+    margin-top: 5%;
+}
 
 .gauche {
     display: flex;
@@ -482,25 +487,48 @@ input[type=submit]:hover {
     color: #141414;
 }
 
-.pres h3 {
-
+.trofor {
+    width: 100%;
 }
 
-.competences {
+.trofor ul {
+    height: 30vh;
+    padding-left: 0;
+}
 
+.comp-gauche li {
+    margin-top: 25%;
+    height: 5vh;
+}
+
+.comp-droite li {
+    margin-top: 25%;
+    height: 5vh;
 }
 
 .trofor {
     display: flex;
     justify-content: space-around;
     width: 20vw;
-
-
 }
+
+.trofor img {
+    width: 2vw;
+    height: auto;
+}
+
+
+
 
 .droite {
     margin-top: 10%;
+    width: 20vw;
 }
+
+.diplomes li {
+
+}
+
 
 
 
@@ -634,6 +662,11 @@ input[type=submit]:hover {
 
     .header img {
         width: 12vw;
+    }
+
+    .trofor img {
+        width: 2vw;
+        height: auto;
     }
 
 }
