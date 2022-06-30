@@ -43,6 +43,7 @@ h3 {
 
 ::-webkit-scrollbar {
     display: none;
+
   }
 
 .navbar {
@@ -379,6 +380,24 @@ input[type=submit]:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+
+
+/*** CV ***/
+
+.contour {
+    margin: 4rem;
+    width: 60vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.contour img {
+    width: 60vw;
+    height: auto;
+    z-index: -1;
+}
+
 
 
 /*
