@@ -15,6 +15,13 @@ main {
 }
 
 p {
+    text-align: left;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    color:#141414;
+}
+
+.pe {
     font-family: 'Montserrat', sans-serif;
     font-size: 19px;
     line-height: 30px;
@@ -385,8 +392,9 @@ input[type=submit]:hover {
 /*** CV ***/
 
 .contour {
-    margin: 4rem;
+    margin: 10%;
     width: 60vw;
+    aspect-ratio: 1/1.414;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -396,8 +404,64 @@ input[type=submit]:hover {
     width: 60vw;
     height: auto;
     z-index: -1;
+    position: absolute;
 }
 
+.corps {
+    color:#141414;
+    display: flex;
+}
+
+.header img {
+    width: 12vw;
+    border-radius: 50%;
+    margin-top: 4.5%;
+    margin-left: 7.5%;
+    border: 0.3vw solid white;
+}
+
+.infos {
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: right;
+    color: white;
+}
+
+.infos h1 {
+    font-size: 3.8vw;
+    font-weight: 500;
+}
+
+.infos h2 {
+    font-size: 2.8vw;
+    font-weight: 300;
+    margin-top: 2%;
+}
+
+.gauche {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.pres {
+    width: 20vw;
+    color: #141414;
+}
+
+.pres h3 {
+    margin-right: 8%%;
+}
+
+.corps h3 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.competences {
+
+}
 
 
 /*
@@ -411,7 +475,7 @@ input[type=submit]:hover {
         padding: 0;
     }
 
-    p {
+    .pe {
         font-size: 16px;
     }
     
@@ -512,6 +576,20 @@ input[type=submit]:hover {
 
     .contenu {
         margin-top: 0;
+    }
+
+    .contour {
+        margin: 4rem;
+        width: 80vw;
+        aspect-ratio: 1/1.414;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    .contour img {
+        width: 80vw;
     }
 
 }
