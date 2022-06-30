@@ -407,10 +407,6 @@ input[type=submit]:hover {
     position: absolute;
 }
 
-.corps {
-    color:#141414;
-    display: flex;
-}
 
 .header img {
     width: 12vw;
@@ -438,11 +434,44 @@ input[type=submit]:hover {
     margin-top: 2%;
 }
 
+.corps {
+    color:#141414;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    padding: 0 3%;
+}
+
+
+.corps h3 {
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.corps ul {
+    list-style: none;
+    padding-left: 10%;
+}
+
+.corps li {
+    margin-top: 5%;
+}
+
+.corps a {
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+}
+
+
 .gauche {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 5%;
 }
 
 .pres {
@@ -451,17 +480,17 @@ input[type=submit]:hover {
 }
 
 .pres h3 {
-    margin-right: 8%%;
-}
 
-.corps h3 {
-    font-size: 2vw;
-    text-align: center;
 }
 
 .competences {
 
 }
+
+.droite {
+    margin-top: 10%;
+}
+
 
 
 /*
@@ -590,6 +619,10 @@ input[type=submit]:hover {
 
     .contour img {
         width: 80vw;
+    }
+
+    .header img {
+        width: 12vw;
     }
 
 }
