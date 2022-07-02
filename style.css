@@ -592,8 +592,22 @@ input[type=submit]:hover {
         padding: 0;
     }
 
+    h1 {
+        font-size: 15vw;
+    }
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    h3 {
+        font-size: 8vw;
+    }
+
     .pe {
-        font-size: 16px;
+        font-size: 2.8vw;
+        text-align: center;
+        line-height: 2vh;
     }
     
     .navbar {
@@ -730,7 +744,7 @@ input[type=submit]:hover {
     }
 
     .xp-gauche {
-        width: 50%;
+        width: 53%;
     }
 
     .xp ul {
@@ -740,6 +754,7 @@ input[type=submit]:hover {
     .contour p {
         font-size: 1.5vw;
     }
+
     .contour a {
         font-size: 1.5vw;
     }
@@ -747,6 +762,7 @@ input[type=submit]:hover {
     .contour h3 {
         font-size: 3vw;
     }
+
     .contour h1 {
         font-size: 5.5vw;
         font-weight: 500;
@@ -766,6 +782,7 @@ input[type=submit]:hover {
     .gauche {
         width: 35%;
     }
+
     .droite {
         width: 35%;
         display: block;
@@ -784,6 +801,31 @@ input[type=submit]:hover {
     .competences ul{
         margin: 0;
     }
+
+    .sheesh {
+        margin-top: 3%;
+    }
+
+    #analyse {
+        margin-top: 14%;
+    }
+    
+    #operateur {
+        margin-top: 9%;
+    }
+    
+    #stage {
+        margin-top: 13%;
+    }
+
+    .formulaire {
+        font-size: 3.5vw;
+    }
+
+    ::placeholder {
+        font-size: 2.8vw;
+      }
+    
 
 
     
