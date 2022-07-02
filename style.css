@@ -493,13 +493,15 @@ input[type=submit]:hover {
     color: #141414;
 }
 
+.droite ul {
+    margin: 0;
+}
 
 .trofor {
     width: 100%;
 }
 
 .trofor ul {
-    height: 30vh;
     padding: 0;
 }
 
@@ -518,16 +520,20 @@ input[type=submit]:hover {
     height: auto;
 }
 
-
-
-
 .droite {
-    margin-top: 10%;
+    margin-top: 8%;
     width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .diplomes li {
     margin-top: 5%;
+}
+
+.formations {
+    margin-top: 4%;
 }
 
 .sheesh {
@@ -540,6 +546,36 @@ input[type=submit]:hover {
     margin-bottom: 3%;
     margin-top: 0;
     font-weight: 500;
+}
+
+.xp {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+}
+
+.xp-gauche li {
+    text-transform: uppercase;
+    list-style: none;
+    margin-bottom: 15%;
+    font-weight: 600;
+}
+
+.xp-droite {
+    width: 40%;
+}
+
+#analyse {
+    margin-top: 12%;
+}
+
+#operateur {
+    margin-top: 6.5%;
+}
+
+#stage {
+    margin-top: 12%;
 }
 
 
@@ -660,8 +696,7 @@ input[type=submit]:hover {
     }
 
     .contour {
-        margin: 4rem;
-        width: 80vw;
+        width: 80%;
         aspect-ratio: 1/1.414;
         height: auto;
         margin-left: auto;
@@ -670,16 +705,92 @@ input[type=submit]:hover {
     }
 
     .contour img {
-        width: 80vw;
+        width: 80%;
+        height: auto;
+        z-index: -1;
+        position: absolute;
     }
 
+
     .header img {
-        width: 12vw;
+        width: 15vw;
+        border-radius: 50%;
+        margin-top: 4.5%;
+        margin-left: 9%;
+        border: 0.3vw solid white;
     }
 
     .trofor img {
         width: 2vw;
         height: auto;
     }
+
+    .contour li {
+        font-size: 1.5vw;
+    }
+
+    .xp-gauche {
+        width: 50%;
+    }
+
+    .xp ul {
+        padding-left: 5%;
+    }
+
+    .contour p {
+        font-size: 1.5vw;
+    }
+    .contour a {
+        font-size: 1.5vw;
+    }
+
+    .contour h3 {
+        font-size: 3vw;
+    }
+    .contour h1 {
+        font-size: 5.5vw;
+        font-weight: 500;
+    }
+    
+    .contour h2 {
+        font-size: 4.5vw;
+        font-weight: 300;
+        margin-top: 2%;
+    }
+
+    .corps {
+        margin-top: -2%;
+    }
+
+
+    .gauche {
+        width: 35%;
+    }
+    .droite {
+        width: 35%;
+        display: block;
+    }
+
+    .trofor {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .competences {
+        width: 100%;
+    }
+
+    .competences ul{
+        margin: 0;
+    }
+
+
+    
+
+
+
+
+   
 
 }
