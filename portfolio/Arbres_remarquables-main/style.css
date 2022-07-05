@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    background: #6f8663;
+}
+.mv1300 {
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 4em;
+    color: white;
+    width: 700px;
+    letter-spacing: 3px;
+}
+.titre1 {
+    text-align: center;
+}
+.titre2 {
+    text-align: center;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+h3 {
+    color: white;
+    margin: 10px 20px;
+}
+.border {
+    border-bottom: 4px solid rgb(124, 41, 16);
+    padding: 40px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.metre {
+    color: #3a393a ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.group p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 3px;
+
+}
+.grand {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.grand1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+.informations {
+    width: 500px;
+    color: white;
+    font-weight: 400;
+    margin-left: 120px;
+}
+.informations p {
+    letter-spacing: 3px;
+}
+.informations h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+.grand h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.platane {
+    width: 350px;
+}
+.group ul{
+    padding: 10px 20px;
+    margin: 0;
+}
+.menu nav {
+    width: 100%;
+}
+.menu button {
+    padding: 10px 20px;
+    border: 3px solid rgb(124, 41, 16);
+    background-color: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 3px;
+}
+.menu button:hover {
+    cursor: pointer;
+    background-color: rgb(124, 41, 16) ;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li button:hover{
+    cursor: pointer;
+    color: white;
+}
+.menu {
+    height: 90px;
+    margin-top: 10px;
+
+}
+
+.group {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+    padding: 40px;
+
+}
+
+.infos {
+    background-color: rgb(153, 177, 152);
+    width: 300px;
+    border: solid 5px rgb(124, 41, 16);
+    border-radius: 20px;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 3px;
+}
+.formulaire p {
+    padding: 10px;
+    margin-left: 30px;
+}
+.carte{
+    width: 1300px;
+    height: 800px;
+    background-image: url(grande_carte.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border: solid 5px rgb(124, 41, 16);
+    border-radius: 20px;
+    margin-left: 50px;
+}
+.icone-zoom {
+    width: 25px;
+    height: auto;
+    
+}
+.icone-zoom:hover {
+    transition: 300ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.icone .text {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    min-width: 130px;
+    background-color: white;
+    border: solid 1px rgb(184, 174, 174);
+    border-radius: 10px;
+}
+.icone:hover .text {
+    display: block;
+    transition: 200ms;
+}
+
+
+
+.hidden {
+    opacity: 0%;
+    pointer-events: none;
+}
+form p {
+    color: white;
+}
+
+
+
+#arbre1 {
+    position: absolute;
+    left: 400px;
+    top: 400px;
+}
+#arbre2 {
+    position: absolute;
+    left: 465px;
+    top: 380px;
+}
+#arbre3 {
+    position: absolute;
+    left: 330px;
+    top: 520px;
+}
+
+#arbre4 {
+    position: absolute;
+    left: 150px;
+    top: 450px;
+}
+
+#arbre5 {
+    position: absolute;
+    left: 180px;
+    top: 360px;
+}
+
+#arbre6 {
+    position: absolute;
+    left: 480px;
+    top: 240px;
+}
+#arbre7 {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+}
+.input {
+    background-color: transparent;
+}
+.chart1 {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
