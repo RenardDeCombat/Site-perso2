@@ -35,5 +35,7 @@
                     echo "Une variable n'est pas declaree et ou est null ";
                 }
 
+                header("Location: index.html#contact");
+
  
 ?>
