@@ -396,8 +396,12 @@ input[type=submit]:hover {
 
 /*** CV ***/
 
+#CV>h2{
+    text-align: center;
+}
+
 .contour {
-    margin: 10%;
+    margin: 3% 10%;
     width: 60vw;
     aspect-ratio: 1/1.414;
     height: auto;
